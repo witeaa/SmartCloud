@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.smartcloud.iot.smartcloud.ChartActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="150dp"
+                android:id="@+id/tv_tp"
+                android:background="@drawable/bg_txv_tmp"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="00%"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="150dp"
+                android:id="@+id/tv_hm"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/tv_tp"
+                android:background="@drawable/bg_txv_hum"
+                android:layout_height="match_parent"
+                android:text="00℃"
+                android:textSize="40sp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/chart_hum"
+            android:layout_height="250dp"></com.github.mikephil.charting.charts.LineChart>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_tmp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"></com.github.mikephil.charting.charts.LineChart>
+
+
+
+    </LinearLayout>
+</ScrollView>

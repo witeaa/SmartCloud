@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartcloud.iot.smartcloud.SmartConfig.ConfigActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:src="@drawable/icon_wifi"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/re_tx_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:lines="1"
+            android:text="XXXX"/>
+
+
+
+        <EditText
+
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/re_et_password"
+            android:textSize="20sp"
+            android:hint="密码:"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPassword"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确保设备进入配网模式"
+            android:textSize="24sp"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/re_btn_confirm"
+            android:text="连接"
+            android:textSize="20sp"
+            android:onClick="btn_reconfig_click"
+            android:background="@drawable/btn_orange"
+            tools:ignore="HardcodedText,OnClick" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

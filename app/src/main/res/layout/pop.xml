@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_remove"
+        android:text="删除"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="24sp"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_gravity="right"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop_edit"
+        android:text="重新配置网络"
+        android:onClick="pop_edit_click"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="24sp"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_gravity="right"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack" />
+
+</LinearLayout>

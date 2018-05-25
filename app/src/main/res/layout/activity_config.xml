@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartcloud.iot.smartcloud.SmartConfig.ConfigActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:src="@drawable/icon_wifi"/>
+        <TextView
+            android:id="@+id/tx_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:lines="1"
+            android:text="XXXX"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:textSize="20sp"
+            android:hint="密码:"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPassword"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_id"
+            android:textSize="20sp"
+            android:hint="ID:"
+            android:lines="1"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary" />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_name"
+            android:textSize="20sp"
+            android:hint="名称:"
+            android:lines="1"
+            android:textColor="@color/colorPrimary"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确保设备进入配网模式"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_confirm"
+            android:text="连接"
+            android:textSize="20sp"
+            android:onClick="btn_config_click"
+            android:background="@drawable/btn_orange"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
